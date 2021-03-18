@@ -1,0 +1,461 @@
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat';
+}
+
+body{
+  background: #e7f1ff;
+  font-size: 14px;
+  color: #a0acb5;
+  letter-spacing: 1px;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .resume{
+  width: 450px;
+  margin: 5px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125), -1px -1px 2px rgba(0,0,0,0.125);
+}
+
+.resume .profile_info {
+  text-align: center;
+}
+
+.resume .profile_info .profile_img {
+  width: 100px;
+  margin: 0 auto 5px;
+}
+
+.resume .profile_info .profile_img img {
+  width: 100%;
+  display: block;
+}
+
+.resume .profile_info .profile_data .name {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: 'Trade Winds';
+}
+
+.resume .profile_info .profile_data span {
+  display: inline-block;
+  color: #697c8e;
+}
+
+.resume .view_more_btn a{
+    display: block;
+    background: #5558c9;
+    color: #fff;
+    padding: 10px 15px;
+    width: 125px;
+  margin: 10px auto;
+  border-radius: 3px;
+}
+
+.resume .view_more_btn a:hover {
+    background: #7377ff;
+}
+
+.resume .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #5558c9;
+    margin-bottom: 15px;
+}
+
+.skills ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skills ul li{
+  padding: 0 5px 10px;
+  width: 33.32%;
+  height: 85px;
+}
+
+.skills ul li .skill_item{
+  background: #f2f4f5;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.skills ul li .skill_item .icon{
+  background: url('sprite.png') no-repeat 0 0;
+  width: 20px;
+  height: 22px;
+  margin: 0 auto 5px;
+}
+
+.skills ul li .skill_item.html .icon{
+  background-position:   0 -50px;
+}
+
+.skills ul li .skill_item.css .icon{
+  background-position: 0 -25px;
+   height: 24px;
+}
+
+.skills ul li .skill_item.js .icon{
+  background-position: -1 -75px;
+}
+
+.skills ul li .skill_item.laravel .icon{
+  background-position:  -1 -100px;
+}
+
+.skills ul li .skill_item.mysql .icon{
+  background-position: -1 -125px;
+}
+
+.full_info_wrap .tabs ul{
+  display: flex;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #dfe4e6;
+  border-radius: 3px;
+}
+
+.full_info_wrap .tabs ul li{
+  padding: 10px 15px;
+  width: 33.34%;
+  height: 34px;
+  text-align: center;
+  border-right: 1px solid #dfe4e6;
+  background: #f2f4f5;
+  color: #a0acb5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.full_info_wrap .tabs ul li:last-child{
+  border-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.full_info_wrap .tabs ul li.active,
+.full_info_wrap .tabs ul li:hover{
+  background: #fff;
+  color: #5558c9;
+}
+
+.full_info{
+  padding-top: 15px;
+  height: 295px;
+  overflow: auto;
+}
+
+.info_wrap{
+  padding-left: 5px;
+}
+
+.info_wrap ul li{
+  margin-bottom: 10px;
+}
+
+.info_wrap ul li:last-child{
+  margin-bottom: 0;
+}
+
+.info_wrap .sub_title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #7377ff;
+}
+
+.info_wrap .info_item{
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.info_wrap .info_item .info_title{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.info_wrap .info_item .data{
+  font-size: 12px;
+}
+
+.contact .info_wrap ul li span{
+  display: inline-block;
+}
+
+.contact .info_wrap ul li span.info_q{
+  width: 150px;
+}
+
+.contact .info_wrap ul li span.info_a{
+  font-weight: 600;
+}
+</style>
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="dsa.png">
+            </div>
+            <div class="profile_data">
+                <p class="name">Nguyen Hai Bang</p>
+                <span><i class="fas fa-map-marker-alt"></i>PHP developer</span>
+            </div>
+            <div class="view_more_btn">
+              <a href="#">View More</a>
+            </div>
+        </div>  
+      
+       <div class="skills">
+	       <div class="title" style=" margin-left: 10px;">
+	          Skills
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item bit">
+	             <div class="icon"></div>
+	             <div class="text">Bitbucket</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">Html</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">Css</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text">Js</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item laravel">
+	             <div class="icon"></div>
+	             <div class="text">Laravel</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item mysql">
+	             <div class="icon"></div>
+	             <div class="text">MySQL</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experience</li>
+                    <li data-li="education">Career Goals</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">WORK EXPERIENCE</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2015 - 2020
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										College
+									</div>
+									<div class="data">
+										Study at Post And Telecommunications Institute of Technology. I was majoring in Information Technology
+									</div>
+								</div>
+                    		<div class="sub_title">
+                    				7/2020 - 10/2020 
+                    		</div>
+								<div class="info_item">
+									<div class="info_title">
+										Intern at HighTech Thien Quan 
+									</div>
+                  <div class="data">
+                        - Join project Informatics Center Management Software<br>
+                        - Analyst and design database<br>
+                        - Learn how to use Laravel<br>
+                        - Design Front-end, write function for Back-end using Laravel<br>
+                        - Learn how to management source code with Bitbucket<br>
+                        - Learn about teamwork<br>
+                        - Learn basic Photoshop and use Trello to check process
+                  </div>
+                  <h5 style="margin-top: 10px; font-size: 11px;
+                      font-weight: 700;
+                      color: #5558c9;
+                      margin-bottom: 15px;">Link project :<a href="https://bitbucket.org/trackhang1909/informaticscenter/src" target="_blank" > Click here</a>
+                    </h5>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				10/2020 - 1/2021
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Laravel Developer at HighTech Thien Quan
+									</div>
+									<div class="data">
+										- Join project HighTech Thien Quan Management Software<br>
+                        - Keep learning Laravel and improve<br>
+                        - Learn about code convention<br>
+                        - Learn how to clean code and performance (but i need more time to improve it)<br>
+                        - Design somes page, write function for Back-end using Laravel<br>
+                        - Learn about teamwork <br>
+                        - Fix bug, test case<br>
+                        - Learn about Api and write Api function for Web<br>
+                        - Learn how to fix conflicts on Bitbucket
+									</div>
+                   <h5 style="margin-top: 10px; font-size: 11px;
+                      font-weight: 700;
+                      color: #5558c9;
+                      margin-bottom: 15px;">Link project :<a href="https://bitbucket.org/haibang97ptit/let-review-my-code/src/master/" target="_blank" > Click here</a>
+                    </h5>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">GOALS</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				Short-term goal
+                    			</div>
+								
+								<div class="info_item">
+									<div class="data">
+										-Keep learn and practice over and over again<br>
+                    -Find to a job and do my best with it, no matter how difficut it is<br>
+                    -Learn English and Japanese, and use it for works.
+									</div>
+									<!-- <div class="data">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									</div> -->
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				Long-term goal	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="data">
+                    -Try to learn new programer language (Golang,Python,R)<br>
+                    -Learn about unit test, data analyst<br>
+                    -Maybe one day i will try at BrSE
+									</div>
+									<!-- <div class="data">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									</div> -->
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">haibang97ptit@gmail.com</span>
+                  		</li>
+                  		<!-- <li>
+                  			<span class="info_q">Website</span>
+                  			<span class="info_a">scarlett.rosey@gmail.com</span>
+                  		</li> -->
+                  		<li>
+                  			<span class="info_q">Phone</span>
+                  			<span class="info_a">0963 975 958</span>
+                  		</li>
+                  		<!-- <li>
+                  			<span class="info_q">Linkedin</span>
+                  			<span class="info_a">linkedin.com/rosey1</span>
+                  		</li> -->
+                  		<li>
+                  			<span class="info_q">Facebook</span>
+                  			<span class="info_a">facebook.com/dalat181920</span>
+                  		</li>
+                  		<!-- <li>
+                  			<span class="info_q">Twitter</span>
+                  			<span class="info_a">twitter.com/Srosey</span>
+                  		</li> -->
+                  		<!-- <li>
+                  			<span class="info_q">Instagram</span>
+                  			<span class="info_a">instagram.com/rosey124</span>
+                  		</li> -->
+                  		<!-- <li>
+                  			<span class="info_q">Reddit</span>
+                  			<span class="info_a">reddit.com/Srosey</span>
+                  		</li> -->
+                  	</ul>
+                  </div>
+                </div>  
+            </div> 
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script type="text/javascript">
+      $(".full_info_wrap .tabs ul li").click(function(){
+        $(".full_info_wrap .tabs ul li").removeClass("active");
+        $(this).addClass("active");
+
+        var datali = $(this).attr("data-li");
+
+        $(".full_info_item").hide();
+
+        if(datali == "experience"){
+          $(".experience").show();
+        }
+        else if(datali == "education"){
+          $(".education").show();
+        }
+        else if(datali == "contact"){
+          $(".contact").show();
+        }
+        else{
+          console.log("Loding...");
+        }
+      })
+</script>
+   </div>
+</div>
